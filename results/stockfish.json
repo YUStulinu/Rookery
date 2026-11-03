@@ -1,0 +1,102 @@
+{
+  "levels": {
+    "UCI_Elo 1500": {
+      "games": 100,
+      "wins": 100,
+      "losses": 0,
+      "draws": 0,
+      "score": 1.0,
+      "elo_difference": Infinity,
+      "elo_error_95": null,
+      "time_control": "10+0.1",
+      "minutes": 5.7,
+      "pgn": "results\\games\\stockfish-1500.pgn"
+    },
+    "UCI_Elo 1800": {
+      "games": 100,
+      "wins": 97,
+      "losses": 2,
+      "draws": 1,
+      "score": 0.975,
+      "elo_difference": 636.4,
+      "elo_error_95": null,
+      "time_control": "10+0.1",
+      "minutes": 6.7,
+      "pgn": "results\\games\\stockfish-1800.pgn",
+      "implied_rating": 2436
+    },
+    "UCI_Elo 2100": {
+      "games": 100,
+      "wins": 94,
+      "losses": 4,
+      "draws": 2,
+      "score": 0.95,
+      "elo_difference": 511.5,
+      "elo_error_95": 201.6,
+      "time_control": "10+0.1",
+      "minutes": 6.8,
+      "pgn": "results\\games\\stockfish-2100.pgn",
+      "implied_rating": 2612
+    },
+    "UCI_Elo 2400": {
+      "games": 100,
+      "wins": 86,
+      "losses": 9,
+      "draws": 5,
+      "score": 0.885,
+      "elo_difference": 354.5,
+      "elo_error_95": 108.9,
+      "time_control": "10+0.1",
+      "minutes": 7.8,
+      "pgn": "results\\games\\stockfish-2400.pgn",
+      "implied_rating": 2754
+    },
+    "UCI_Elo 2700": {
+      "games": 100,
+      "wins": 63,
+      "losses": 29,
+      "draws": 8,
+      "score": 0.67,
+      "elo_difference": 123.0,
+      "elo_error_95": 70.2,
+      "time_control": "10+0.1",
+      "minutes": 9.0,
+      "pgn": "results\\games\\stockfish-2700.pgn",
+      "implied_rating": 2823
+    },
+    "UCI_Elo 3000": {
+      "games": 100,
+      "wins": 14,
+      "losses": 64,
+      "draws": 22,
+      "score": 0.25,
+      "elo_difference": -190.8,
+      "elo_error_95": 67.5,
+      "time_control": "10+0.1",
+      "minutes": 10.1,
+      "pgn": "results\\games\\stockfish-3000.pgn",
+      "implied_rating": 2809
+    },
+    "UCI_Elo 3190": {
+      "games": 100,
+      "wins": 2,
+      "losses": 93,
+      "draws": 5,
+      "score": 0.045,
+      "elo_difference": -530.7,
+      "elo_error_95": 179.0,
+      "time_control": "10+0.1",
+      "minutes": 8.8,
+      "pgn": "results\\games\\stockfish-3190.pgn",
+      "implied_rating": 2659
+    }
+  },
+  "estimate": {
+    "rating_on_stockfish_uci_elo_scale": 2774,
+    "interval_95": [
+      2731,
+      2818
+    ],
+    "method": "maximum likelihood over all levels, draws as half a win (Bradley-Terry / Elo model)"
+  }
+}

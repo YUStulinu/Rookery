@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "build the engine", "type": "shell", "command": "cmake -S engine -B engine/build -G Ninja && cmake --build engine/build", "group": "build", "problemMatcher": ["$gcc"] },
+    { "label": "engine tests", "type": "shell", "command": "engine/build/rookery_tests", "group": "test", "problemMatcher": [] },
+    { "label": "trainer tests", "type": "shell", "command": ".venv/Scripts/python -m pytest -q", "options": { "cwd": "${workspaceFolder}/trainer" }, "group": "test", "problemMatcher": [] },
+    { "label": "web tests", "type": "shell", "command": "npx vitest run", "options": { "cwd": "${workspaceFolder}/web" }, "group": "test", "problemMatcher": [] },
+    { "label": "web: build and serve", "type": "shell", "command": "npm run build && npm start", "options": { "cwd": "${workspaceFolder}/web" }, "isBackground": true, "problemMatcher": [] }
+  ]
+}

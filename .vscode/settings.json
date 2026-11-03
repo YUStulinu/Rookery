@@ -1,0 +1,8 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}/engine",
+  "cmake.buildDirectory": "${workspaceFolder}/engine/build",
+  "python.defaultInterpreterPath": "${workspaceFolder}/trainer/.venv/Scripts/python.exe",
+  "python.testing.pytestEnabled": true,
+  "python.testing.cwd": "${workspaceFolder}/trainer",
+  "search.exclude": { "data": true, "third_party": true, "engine/build*": true, "**/node_modules": true, "web/dist": true, "results/games": true }
+}

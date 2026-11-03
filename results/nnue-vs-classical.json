@@ -1,0 +1,12 @@
+{
+  "games": 400,
+  "wins": 252,
+  "losses": 85,
+  "draws": 63,
+  "score": 0.709,
+  "elo_difference": 154.5,
+  "elo_error_95": 33.8,
+  "time_control": "10+0.1",
+  "minutes": 34.9,
+  "pgn": "results\\games\\nnue-vs-classical.pgn"
+}

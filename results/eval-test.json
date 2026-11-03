@@ -1,0 +1,1 @@
+{"positions": 132611, "classical": {"loss": 0.012371, "mean_abs_cp": 134.108, "right_side_better": 0.822448}, "nnue": {"loss": 0.00946105, "mean_abs_cp": 114.465, "right_side_better": 0.888044}}

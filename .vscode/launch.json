@@ -1,0 +1,6 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "rookery bench", "type": "cppdbg", "request": "launch", "program": "${workspaceFolder}/engine/build/rookery.exe", "args": ["bench", "10"], "cwd": "${workspaceFolder}/engine/build", "MIMode": "gdb" }
+  ]
+}

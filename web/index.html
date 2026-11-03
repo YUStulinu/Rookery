@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rookery</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header>
+      <strong>Rookery</strong>
+      <span class="muted">a chess engine with a neural network evaluation</span>
+    </header>
+    <main>
+      <div class="board-area">
+        <div class="evalbar" title="Evaluation from White's side">
+          <div class="evalbar-white" id="evalbar"></div>
+          <span id="evalbar-label">0.00</span>
+        </div>
+        <div>
+          <div id="board" class="board" role="grid" aria-label="Chess board"></div>
+          <p id="status" class="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <aside>
+        <section class="controls">
+          <label>Mode
+            <select id="mode">
+              <option value="white">Play as White</option>
+              <option value="black">Play as Black</option>
+              <option value="analyse">Analyse</option>
+            </select>
+          </label>
+          <label>Evaluation
+            <select id="eval">
+              <option value="nnue">Neural network (NNUE)</option>
+              <option value="classical">Classical</option>
+            </select>
+          </label>
+          <label>Engine time per move
+            <select id="movetime">
+              <option value="300">0.3 s</option>
+              <option value="1000" selected>1 s</option>
+              <option value="3000">3 s</option>
+            </select>
+          </label>
+          <div class="buttons">
+            <button id="new">New game</button>
+            <button id="undo">Take back</button>
+            <button id="flip">Flip board</button>
+          </div>
+          <label>Position (FEN)
+            <span class="fen-row"><input id="fen" spellcheck="false" /><button id="load">Load</button></span>
+          </label>
+        </section>
+        <section>
+          <h2>Engine</h2>
+          <p id="engine-line" class="engine-line">–</p>
+          <p id="pv" class="pv"></p>
+        </section>
+        <section>
+          <h2>Moves</h2>
+          <ol id="moves" class="moves"></ol>
+        </section>
+      </aside>
+    </main>
+    <div id="promotion" class="promotion" hidden></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

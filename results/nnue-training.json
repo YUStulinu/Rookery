@@ -1,0 +1,104 @@
+{
+  "positions": 8081688,
+  "validation_positions": 161633,
+  "hidden": 256,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train": 0.012191,
+      "valid": 0.009257
+    },
+    {
+      "epoch": 2,
+      "train": 0.008851,
+      "valid": 0.008452
+    },
+    {
+      "epoch": 3,
+      "train": 0.008293,
+      "valid": 0.008122
+    },
+    {
+      "epoch": 4,
+      "train": 0.007999,
+      "valid": 0.007936
+    },
+    {
+      "epoch": 5,
+      "train": 0.007799,
+      "valid": 0.00782
+    },
+    {
+      "epoch": 6,
+      "train": 0.007651,
+      "valid": 0.007705
+    },
+    {
+      "epoch": 7,
+      "train": 0.00754,
+      "valid": 0.007646
+    },
+    {
+      "epoch": 8,
+      "train": 0.007455,
+      "valid": 0.007596
+    },
+    {
+      "epoch": 9,
+      "train": 0.007394,
+      "valid": 0.007571
+    },
+    {
+      "epoch": 10,
+      "train": 0.007349,
+      "valid": 0.007548
+    },
+    {
+      "epoch": 11,
+      "train": 0.007321,
+      "valid": 0.007536
+    },
+    {
+      "epoch": 12,
+      "train": 0.007306,
+      "valid": 0.007534
+    }
+  ],
+  "seconds": 364,
+  "file": "nets\\rookery.nnue",
+  "file_bytes": 394768,
+  "check": [
+    {
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "eval": 28
+    },
+    {
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "eval": -11
+    },
+    {
+      "fen": "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1",
+      "eval": -154
+    },
+    {
+      "fen": "8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - - 0 1",
+      "eval": -7
+    },
+    {
+      "fen": "rnb1kbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "eval": 862
+    },
+    {
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/3R2K1 b - - 0 1",
+      "eval": -730
+    },
+    {
+      "fen": "8/8/4k3/3p4/3P4/4K3/8/8 w - - 0 1",
+      "eval": 7
+    },
+    {
+      "fen": "r1bq1rk1/pp2bppp/2n1pn2/3p4/2PP4/2N1PN2/PP2BPPP/R2QKB1R w KQ - 1 8",
+      "eval": 85
+    }
+  ]
+}

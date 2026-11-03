@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  engine:
+    # Move generation (perft), hashing, draws, the network against the trainer's own numbers,
+    # incremental updates, and searches that must find mates; with GCC and with MSVC.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - run: cmake -S engine -B engine/build -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build engine/build --config Release --parallel
+      - run: ctest --test-dir engine/build -C Release --output-on-failure
+      - name: Bench
+        shell: bash
+        run: |
+          exe=$(find engine/build -name 'rookery' -o -name 'rookery.exe' | head -1)
+          "$exe" bench 9
+
+  trainer:
+    # Feature indexing, the engine's integer arithmetic reproduced in Python, the data readers.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: trainer
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: |
+          pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy==2.5.4 pytest==9.2.0
+          python -m pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npx vitest run
+      - run: npm run build

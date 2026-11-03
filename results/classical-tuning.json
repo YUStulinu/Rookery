@@ -1,0 +1,250 @@
+{
+  "positions": 4000000,
+  "validation_positions": 200000,
+  "loss_material_only": 0.014319,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train": 0.01114,
+      "valid": 0.010821
+    },
+    {
+      "epoch": 2,
+      "train": 0.010744,
+      "valid": 0.010763
+    },
+    {
+      "epoch": 3,
+      "train": 0.010699,
+      "valid": 0.010728
+    },
+    {
+      "epoch": 4,
+      "train": 0.010666,
+      "valid": 0.010706
+    },
+    {
+      "epoch": 5,
+      "train": 0.010645,
+      "valid": 0.010684
+    },
+    {
+      "epoch": 6,
+      "train": 0.010628,
+      "valid": 0.01067
+    },
+    {
+      "epoch": 7,
+      "train": 0.010614,
+      "valid": 0.010658
+    },
+    {
+      "epoch": 8,
+      "train": 0.010604,
+      "valid": 0.010652
+    },
+    {
+      "epoch": 9,
+      "train": 0.010599,
+      "valid": 0.010649
+    },
+    {
+      "epoch": 10,
+      "train": 0.010592,
+      "valid": 0.01064
+    },
+    {
+      "epoch": 11,
+      "train": 0.010589,
+      "valid": 0.010634
+    },
+    {
+      "epoch": 12,
+      "train": 0.010589,
+      "valid": 0.010638
+    },
+    {
+      "epoch": 13,
+      "train": 0.010583,
+      "valid": 0.010635
+    },
+    {
+      "epoch": 14,
+      "train": 0.010583,
+      "valid": 0.010632
+    },
+    {
+      "epoch": 15,
+      "train": 0.010584,
+      "valid": 0.010634
+    },
+    {
+      "epoch": 16,
+      "train": 0.010582,
+      "valid": 0.010629
+    },
+    {
+      "epoch": 17,
+      "train": 0.010578,
+      "valid": 0.010624
+    },
+    {
+      "epoch": 18,
+      "train": 0.010578,
+      "valid": 0.010625
+    },
+    {
+      "epoch": 19,
+      "train": 0.010576,
+      "valid": 0.010625
+    },
+    {
+      "epoch": 20,
+      "train": 0.010578,
+      "valid": 0.010627
+    },
+    {
+      "epoch": 21,
+      "train": 0.01058,
+      "valid": 0.010622
+    },
+    {
+      "epoch": 22,
+      "train": 0.010577,
+      "valid": 0.010629
+    },
+    {
+      "epoch": 23,
+      "train": 0.010577,
+      "valid": 0.010615
+    },
+    {
+      "epoch": 24,
+      "train": 0.010575,
+      "valid": 0.010624
+    },
+    {
+      "epoch": 25,
+      "train": 0.010575,
+      "valid": 0.010637
+    },
+    {
+      "epoch": 26,
+      "train": 0.010578,
+      "valid": 0.010625
+    },
+    {
+      "epoch": 27,
+      "train": 0.010575,
+      "valid": 0.010621
+    },
+    {
+      "epoch": 28,
+      "train": 0.010572,
+      "valid": 0.010618
+    },
+    {
+      "epoch": 29,
+      "train": 0.010575,
+      "valid": 0.010621
+    },
+    {
+      "epoch": 30,
+      "train": 0.010575,
+      "valid": 0.010616
+    }
+  ],
+  "tempo": 14,
+  "terms (mg, eg)": {
+    "mobility knight": [
+      6,
+      2
+    ],
+    "mobility bishop": [
+      6,
+      9
+    ],
+    "mobility rook": [
+      5,
+      6
+    ],
+    "mobility queen": [
+      1,
+      8
+    ],
+    "bishop pair": [
+      14,
+      78
+    ],
+    "passed pawn rank 2": [
+      3,
+      -15
+    ],
+    "passed pawn rank 3": [
+      -14,
+      13
+    ],
+    "passed pawn rank 4": [
+      -3,
+      40
+    ],
+    "passed pawn rank 5": [
+      18,
+      52
+    ],
+    "passed pawn rank 6": [
+      34,
+      93
+    ],
+    "passed pawn rank 7": [
+      34,
+      138
+    ],
+    "doubled pawn": [
+      -17,
+      -46
+    ],
+    "isolated pawn": [
+      -14,
+      -15
+    ],
+    "rook open file": [
+      48,
+      1
+    ],
+    "rook half-open file": [
+      19,
+      21
+    ],
+    "king pawn shield": [
+      23,
+      -16
+    ],
+    "king attacks": [
+      -19,
+      7
+    ]
+  },
+  "average piece values (mg, eg)": {
+    "pawn": [
+      69,
+      142
+    ],
+    "knight": [
+      187,
+      325
+    ],
+    "bishop": [
+      199,
+      316
+    ],
+    "rook": [
+      231,
+      580
+    ],
+    "queen": [
+      799,
+      829
+    ]
+  }
+}

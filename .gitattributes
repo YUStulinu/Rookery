@@ -1,0 +1,7 @@
+* text=auto
+*.sh text eol=lf
+*.json text eol=lf
+*.epd text eol=lf
+*.pgn text eol=lf
+*.nnue binary
+*.png binary
